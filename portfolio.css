@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'poppins', sans-serif;
+}
+
+html{
+    overflow-x: hidden;
+}
+body {
+    /* background-color: rgb(147, 241, 147); */
+background: black;
+    color: white;
+    overflow-x: hidden;
+
+}
+
+header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: greenyellow; */
+    width: 100%;
+    padding: 20px 10%;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+animation: slideTop 1s ease forwards;
+animation-delay: 1s;
+}
+
+.navbar a {
+    font-weight: 500;
+
+    text-decoration: none;
+    font-size: 24px;
+    margin: 10px;
+    /* background-color: black; */
+animation: slideTop .5s ease forwards;
+animation-delay: 1s;
+    
+padding: 5px;
+
+}
+
+.menu-area{
+    /* display: none; */
+}
+.icons{
+    width: 33px;
+height: 33px;
+
+}
+#close-btn{
+    /* display: none; */
+}
+
+
+.navbar a:hover {
+    background: linear-gradient(45deg, #f06, #3cf);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+}
+
+.main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* background:red; */
+
+    padding: 0 10%;
+}
+
+.home-content {
+    margin-left: 33px;
+}
+.home-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+}
+
+.home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+
+
+.home-content p {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.home-content a {
+    font-size: 25px;
+    text-decoration: none;
+    display: inline-flex;
+    border-radius: 50px;
+    padding: 10px;
+    padding-left: 40px;
+}
+
+
+
+.btn {
+    width: 188px;
+    /* background-color: red; */
+text-align: center;
+justify-content: space-between;
+height: 48px;
+padding-left:33px;
+margin-top: 22px;
+background: linear-gradient(45deg, #f06, #3cf, #f06);
+top: 0;
+left: 0;
+
+}
+
+
+
+.btn::after {
+    content: '';
+    top: 0;
+    left: 0;
+    filter: blur(5px);
+    inset: 0;
+    /* position: absolute; */
+    background: linear-gradient(45deg, #f06, #3cf, #f06);
+}
+.btn:hover{
+    /* background: linear-gradient(45deg, #f06, #3cf, #f06); */
+    background: linear-gradient(45deg, rgb(57, 216, 237), rgb(237, 47, 202), #f06);
+
+}
+
+
+
+.home-icon a{
+display: flex;
+padding: 10px;
+/* background-color: red; */
+width: 63px;
+margin-top: 33px;
+border-radius: 50%;
+background: linear-gradient(45deg, #f06, #3cf, #f06);
+color: white;
+}
+
+
+.home-icon a:hover{
+background: linear-gradient(45deg, rgb(57, 216, 237), rgb(237, 47, 202), #f06);
+   
+    }
+    
+
+
+.home-icon a img{
+
+    width: 52px;
+}
+
+
+
+
+
+
+
+
+.profile-img{
+     width: 433px;
+     height: 433px;
+ margin-left:93px ;
+ display: flex;
+ justify-content: space-between;
+align-items: center;
+/* background-color: red;
+ */
+background: linear-gradient(45deg, rgb(255, 22, 115), rgb(55, 205, 255), rgb(255, 21, 21));
+
+border-radius: 50%;
+
+}
+
+
+.contain-img{
+    background-color: black;
+    margin-left: 17px; 
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+   
+}
+
+.contain-img img{
+    width: 100%;
+object-fit: cover;
+/* border:5px solid red; */
+border-radius: 50%;
+   
+}
+@media (max-width:900px){
+
+.navbar{
+    display: none;
+}
+
+
+}
+
