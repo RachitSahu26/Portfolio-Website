@@ -1,3 +1,12 @@
+
+
+
+
+
+
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -195,7 +204,7 @@ border-radius: 20px;
     /* background-color: greenyellow; */
 padding: 10px 20px;
     height: 174px;
-    margin-top: 30px;
+    margin-top: 195px;
     text-align: center;
     /* padding-left: 15px; */
  display: flex;
@@ -218,28 +227,116 @@ padding: 10px 20px;
       margin: 5px; 
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ...................................................................... */
+.projects-area{
+    /* background-color: red; */
+
+    width: 372px;
+
+height:308vh;
+
+}
+.projects-area h1{
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    padding: 0px 0px 10px 0px ;
 }
 
 
+.project-box{
+
+    width: 362px;
+    height:423px;
+      background-color: black;
+/* border: 2px solid wheat; */
+display: flex;
+flex-direction: column;
+}
+.project-img{
+margin: 10px;
+width: 336px;
+/* border: 2px solid wheat; */
+
+height: 305px;
+border-radius: 20px;
+/* background-color: pink; */
+}
+
+.project-img img{
+    /* margin: 10px; */
+    width: 336px;
+    object-fit: cover;
+    height: 305px;
+    /* background-color: pink; */
+    border-radius: 20px;
+    
+}
+    
 
 
+.link-area{
+height: 133px;
+margin-bottom:33px ;
+    background-color:black;
+padding: 12px 70px; 
+display: flex;
+justify-content: space-between;
+}
+.github-code img{
+ width: 43px;
+ background-color: white;
+ border-radius: 30px;
 
+}
+.code{
+    margin-left: 5px;
+ color: white;
+    font-size: 20px;
+}
+.hosted-link img{
+    width: 43px;
+border: 5px solid white;
+    background-color: white;
+border-radius: 30px;
+    margin-left: 5px;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
+}
