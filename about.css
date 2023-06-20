@@ -12,7 +12,9 @@
 
 .left-nav a {
     text-decoration: none;
+    color: black;
 }
+
 
 .middle-nav a {
     padding: 10px;
@@ -160,6 +162,9 @@ height: 149px;
 text-align: center;
 padding-inline-start: 10px;
 }
+.person-detail-area p{
+    font-size: 35px;
+}
 .btn{
    font-size: 35px; 
    margin-top: 20px;
@@ -176,7 +181,7 @@ border-radius: 20px;
     /* background-color: greenyellow; */
 padding: 10px 20px;
     height: 174px;
-    margin-top: 30px;
+    margin-top: 1043px;
     text-align: center;
     /* padding-left: 15px; */
  display: flex;
