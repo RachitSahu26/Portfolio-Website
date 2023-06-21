@@ -4,41 +4,215 @@
     box-sizing: border-box;
 }
 
+
+
+
+
+@media (min-width:1200px) and (max-width:2000px){
+
+
+body {
+    /* background-color: ; */
+    overflow-x: hidden;
+}
+
+html {
+    overflow-x: hidden;
+
+}
+
+
+
+
+/* <!-- ..........nav.............. --> */
+
+nav {
+    /* position: sticky; */
+
+}
+
 .nav-bar {
-    display: flex;
-    justify-content: space-between;
     /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    text-align: center;
+}
+
+.left-nav {
+    /* background-color: aqua; */
+    padding: 10px 20px;
+    margin-left: 60px;
 }
 
 .left-nav a {
+    /* color: white; */
     text-decoration: none;
-    color: white;
+    font-size: 35px;
+
+
+}
+
+
+.middle-nav {
+    /* background-color: greenyellow; */
+    padding: 10px 20px;
 }
 
 .middle-nav a {
-    padding: 10px;
-    font-size: 25px;
-    
+    /* color: white; */
     text-decoration: none;
+    font-size: 40px;
+    padding-left: 30px;
 }
 
-@media (max-width:900px) {
+.detail-icon {
+    display: none;
+}
+
+
+/* <!-- ...............main-area.............. --> */
+
+
+.main {
+    background: linear-gradient(45deg, rgb(255, 81, 81), rgb(81, 81, 255));
+    height: 100vh;
+    padding-top: 33px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.image-area {
+    padding-top: 103px;
+
+}
+
+.image-area img {
+
+    width: 401px;
+    border-radius: 50%;
+    margin-left: 133px;
+    padding-top: 33px;
+    object-fit: center;
+    height: 400px;
+}
 
 
 
-    body{
+
+
+
+.person-detail-area {
+    /* background-color: aqua; */
+    /* margin-right: 372px; */
+    height: 55vh;
+    width: 865px;
+    text-align: center;
+    padding-top: 104px;
+    margin-top: 133px;
+}
+
+.person-detail-area h1 {
+    font-size: 75px;
+color: white;
+}
+
+.person-detail-area h2 {
+    font-size: 45px;
+
+}
+
+
+.social-media-link {
+    position: absolute;
+    top: 38rem;
+
+    left: 56rem;
+}
+
+.social-media-link img {
+    width: 83px;
+}
+}
+
+.btn{
+    font-size:35px ;
+    padding: 5px 5px;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ..................media for 900 to 1200...... */
+
+
+@media (min-width:900px) and  (max-width:1200px){
+
+
+    body {
         overflow-x: hidden;
         background: linear-gradient(45deg, rgb(255, 41, 41), rgb(55, 55, 255));
 
     }
-    html{
+
+    html {
         overflow-x: hidden;
 
     }
+
+
+
     .nav-bar {
-        /* background-color: red; */
-       
+        display: flex;
+        justify-content: space-between;
+
     }
+
+    .left-nav a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .middle-nav a {
+        padding: 10px;
+        font-size: 25px;
+
+        text-decoration: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     /* ..................left nav...................... */
 
@@ -91,17 +265,18 @@
 
 
 
-    .middle-Nav{
+    .middle-Nav {
         position: absolute;
         top: 103px;
-      left: 133px;
-/* padding-top: 40px; */
-   
+        left: 133px;
+        /* padding-top: 40px; */
+
     }
-    .middle-Nav a{
+
+    .middle-Nav a {
         display: flex;
         font-size: 35px;
-padding-top: 50px;
+        padding-top: 50px;
         flex-direction: column;
         color: white;
 
@@ -119,23 +294,23 @@ padding-top: 50px;
 
 
     /* ...............main-area.............. --> */
-  
-  
-  .main2{
-    display: none;
-    background-color: red;
-  }
-  
-    .image-area{
+
+
+    .main2 {
+        display: none;
+        background-color: red;
+    }
+
+    .image-area {
         /* background-color: yellow; */
 
     }
-  
-  
-  
-  
-  
-  
+
+
+
+
+
+
     .image-border {
         /* background-color: yellow; */
         width: 271px;
@@ -144,11 +319,269 @@ padding-top: 50px;
         margin: 15% 15%;
     }
 
-    .image-border  img{
+    .image-border img {
+        width: 400px;
+        border-radius: 50%;
+        height: 400px;
+        margin-top: -82px;
+        margin-left: 203px;
+        object-fit: contain;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .person-detail-area {
+        /* background-color: aqua; */
+        text-align: center;
+        height: 149px;
+        margin-top: -63px;
+
+    }
+
+    .person-detail-area h1,
+    h2 {
+        text-align: center;
+        font-size: 85px;
+        /* padding-inline-start: 10px; */
+        color: white;
+
+    }
+
+    .person-detail-area h2 {
+        color: black;
+    }
+
+    .btn {
+        font-size: 35px;
+        margin-top: 25px;
+        border: none;
+        padding: 10px;
+        border-radius: 20px;
+    }
+
+
+
+
+
+    .social-media-link {
+        /* background-color: greenyellow; */
+        padding: 10px 20px;
+        height: 200px;
+        margin-top: 180px;
+        text-align: center;
+        padding-left: 440px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .social-media-link a {
+        text-decoration: none;
+        font-size: 35px;
+        border-radius: 50%;
+        /* background-color: red; */
+        color: white;
+        width: 103px;
+        height: 103px;
+    }
+
+    .social-media-link img {
+        width: 103px;
+        height: 103px;
+        margin: 5px;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ..................media for 800 to 9000...... */
+
+@media (min-width:700px) and  (max-width:900px){
+
+
+    body {
+        overflow-x: hidden;
+        background: linear-gradient(45deg, rgb(255, 41, 41), rgb(55, 55, 255));
+
+    }
+
+    html {
+        overflow-x: hidden;
+
+    }
+
+
+
+    .nav-bar {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .left-nav a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .middle-nav a {
+        padding: 10px;
+        font-size: 25px;
+
+        text-decoration: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* ..................left nav...................... */
+
+
+    .left-nav {
+        padding: 25px;
+        font-size: 25px;
+    }
+
+
+    /* ..................middle nav...................... */
+
+    .middle-nav {
+        display: none;
+    }
+
+
+    /* ..................right nav...................... */
+    .right-nav {
+        /* background-color: greenyellow; */
+        padding: 5px;
+    }
+
+    .detail-icon {
+        width: 54px;
+        height: 54px;
+
+    }
+
+
+    .detail-icon img {
+        width: 44px;
+        height: 44px;
+
+    }
+
+    .close-icon {
+        display: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .middle-Nav {
+        position: absolute;
+        top: 103px;
+        left: 133px;
+        /* padding-top: 40px; */
+
+    }
+
+    .middle-Nav a {
+        display: flex;
+        font-size: 35px;
+        padding-top: 50px;
+        flex-direction: column;
+        color: white;
+
+        text-decoration: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    /* ...............main-area.............. --> */
+
+
+    .main2 {
+        display: none;
+        background-color: red;
+    }
+
+    .image-area {
+        /* background-color: yellow; */
+
+    }
+
+
+
+
+
+
+    .image-border {
+        /* background-color: yellow; */
         width: 271px;
         border-radius: 50%;
         height: 275px;
-   object-fit: contain;
+        margin: 15% 15%;
+    }
+
+    .image-border img {
+        width: 400px;
+        border-radius: 50%;
+        height: 400px;
+        margin-top: -82px;
+        margin-left: 123px;
+        object-fit: contain;
     }
 
 
@@ -165,81 +598,1091 @@ padding-top: 50px;
 
 
 
-    .person-detail-area{
+    .person-detail-area {
         /* background-color: aqua; */
         text-align: center;
-height: 149px;
+        height: 149px;
+        margin-top: -63px;
 
     }
-    .person-detail-area h1 ,h2{
-text-align: center;
-padding-inline-start: 10px;
-color: white;
+
+    .person-detail-area h1,
+    h2 {
+        text-align: center;
+        font-size: 65px;
+        /* padding-inline-start: 10px; */
+        color: white;
+
+    }
+
+    .person-detail-area h2 {
+        color: black;
+    }
+
+    .btn {
+        font-size: 35px;
+        margin-top: 25px;
+        border: none;
+        padding: 10px;
+        border-radius: 20px;
+    }
+
+
+
+
+
+    .social-media-link {
+        /* background-color: greenyellow; */
+        padding: 10px 20px;
+        height: 174px;
+        margin-top: 90px;
+        text-align: center;
+        padding-left: 280px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .social-media-link a {
+        text-decoration: none;
+        font-size: 35px;
+        border-radius: 50%;
+        /* background-color: red; */
+        color: white;
+        width: 103px;
+        height: 103px;
+    }
+
+    .social-media-link img {
+        width: 103px;
+        height: 103px;
+        margin: 5px;
+    }
+
+
+
 }
-.person-detail-area h2{
-    color: black;
+
+
+
+
+
+
+
+
+
+
+
+/* ..................media for 600 to 800...... */
+
+@media (min-width:600px) and  (max-width:700px){
+
+
+    body {
+        overflow-x: hidden;
+        background: linear-gradient(45deg, rgb(255, 41, 41), rgb(55, 55, 255));
+
+    }
+
+    html {
+        overflow-x: hidden;
+
+    }
+
+
+
+    .nav-bar {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .left-nav a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .middle-nav a {
+        padding: 10px;
+        font-size: 25px;
+
+        text-decoration: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* ..................left nav...................... */
+
+
+    .left-nav {
+        padding: 25px;
+        font-size: 25px;
+    }
+
+
+    /* ..................middle nav...................... */
+
+    .middle-nav {
+        display: none;
+    }
+
+
+    /* ..................right nav...................... */
+    .right-nav {
+        /* background-color: greenyellow; */
+        padding: 5px;
+    }
+
+    .detail-icon {
+        width: 54px;
+        height: 54px;
+
+    }
+
+
+    .detail-icon img {
+        width: 44px;
+        height: 44px;
+
+    }
+
+    .close-icon {
+        display: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .middle-Nav {
+        position: absolute;
+        top: 103px;
+        left: 133px;
+        /* padding-top: 40px; */
+
+    }
+
+    .middle-Nav a {
+        display: flex;
+        font-size: 35px;
+        padding-top: 50px;
+        flex-direction: column;
+        color: white;
+
+        text-decoration: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    /* ...............main-area.............. --> */
+
+
+    .main2 {
+        display: none;
+        background-color: red;
+    }
+
+    .image-area {
+        /* background-color: yellow; */
+
+    }
+
+
+
+
+
+
+    .image-border {
+        /* background-color: yellow; */
+        width: 271px;
+        border-radius: 50%;
+        height: 275px;
+        margin: 15% 15%;
+    }
+
+    .image-border img {
+        width: 300px;
+        border-radius: 50%;
+        height: 300px;
+        margin-left: 83px;
+        object-fit: contain;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .person-detail-area {
+        /* background-color: aqua; */
+        text-align: center;
+        height: 149px;
+
+    }
+
+    .person-detail-area h1,
+    h2 {
+        text-align: center;
+        font-size: 45px;
+        /* padding-inline-start: 10px; */
+        color: white;
+
+    }
+
+    .person-detail-area h2 {
+        color: black;
+    }
+
+    .btn {
+        font-size: 35px;
+        margin-top: 25px;
+        border: none;
+        padding: 10px;
+        border-radius: 20px;
+    }
+
+
+
+
+
+    .social-media-link {
+        /* background-color: greenyellow; */
+        padding: 10px 20px;
+        height: 174px;
+        margin-top: 40px;
+        text-align: center;
+        padding-left: 190px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .social-media-link a {
+        text-decoration: none;
+        font-size: 35px;
+        border-radius: 50%;
+        /* background-color: red; */
+        color: white;
+        width: 103px;
+        height: 103px;
+    }
+
+    .social-media-link img {
+        width: 103px;
+        height: 103px;
+        margin: 5px;
+    }
+
+
+
 }
-.btn{
-   font-size: 35px; 
-   margin-top: 20px;
-   border: none;
-padding: 10px;
-border-radius: 20px;
+
+
+
+
+
+
+
+
+
+/* ..................media for 500 to 600...... */
+
+
+@media (min-width:500px) and  (max-width:600px){
+
+
+    body {
+        overflow-x: hidden;
+        background: linear-gradient(45deg, rgb(255, 41, 41), rgb(55, 55, 255));
+
+    }
+
+    html {
+        overflow-x: hidden;
+
+    }
+
+
+
+    .nav-bar {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .left-nav a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .middle-nav a {
+        padding: 10px;
+        font-size: 25px;
+
+        text-decoration: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* ..................left nav...................... */
+
+
+    .left-nav {
+        padding: 25px;
+        font-size: 25px;
+    }
+
+
+    /* ..................middle nav...................... */
+
+    .middle-nav {
+        display: none;
+    }
+
+
+    /* ..................right nav...................... */
+    .right-nav {
+        /* background-color: greenyellow; */
+        padding: 5px;
+    }
+
+    .detail-icon {
+        width: 54px;
+        height: 54px;
+
+    }
+
+
+    .detail-icon img {
+        width: 44px;
+        height: 44px;
+
+    }
+
+    .close-icon {
+        display: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .middle-Nav {
+        position: absolute;
+        top: 103px;
+        left: 133px;
+        /* padding-top: 40px; */
+
+    }
+
+    .middle-Nav a {
+        display: flex;
+        font-size: 35px;
+        padding-top: 50px;
+        flex-direction: column;
+        color: white;
+
+        text-decoration: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    /* ...............main-area.............. --> */
+
+
+    .main2 {
+        display: none;
+        background-color: red;
+    }
+
+    .image-area {
+        /* background-color: yellow; */
+
+    }
+
+
+
+
+
+
+    .image-border {
+        /* background-color: yellow; */
+        width: 271px;
+        border-radius: 50%;
+        height: 275px;
+        margin: 15% 15%;
+    }
+
+    .image-border img {
+        width: 271px;
+        border-radius: 50%;
+        height: 275px;
+        margin-left: 43px;
+        object-fit: contain;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .person-detail-area {
+        /* background-color: aqua; */
+        text-align: center;
+        height: 149px;
+
+    }
+
+    .person-detail-area h1,
+    h2 {
+        text-align: center;
+        font-size: 45px;
+        /* padding-inline-start: 10px; */
+        color: white;
+
+    }
+
+    .person-detail-area h2 {
+        color: black;
+    }
+
+    .btn {
+        font-size: 35px;
+        margin-top: 25px;
+        border: none;
+        padding: 10px;
+        border-radius: 20px;
+    }
+
+
+
+
+
+    .social-media-link {
+        /* background-color: greenyellow; */
+        padding: 10px 20px;
+        height: 174px;
+        margin-top: 40px;
+        text-align: center;
+        padding-left: 120px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .social-media-link a {
+        text-decoration: none;
+        font-size: 35px;
+        border-radius: 50%;
+        /* background-color: red; */
+        color: white;
+        width: 103px;
+        height: 103px;
+    }
+
+    .social-media-link img {
+        width: 103px;
+        height: 103px;
+        margin: 5px;
+    }
+
+
+
 }
 
 
 
 
 
-.social-media-link{
-    /* background-color: greenyellow; */
-padding: 10px 20px;
-    height: 174px;
-    margin-top: 30px;
-    text-align: center;
-    /* padding-left: 15px; */
- display: flex;
- flex-direction: row;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:360px) and  (max-width:500px){
+
+
+    body {
+        overflow-x: hidden;
+        background: linear-gradient(45deg, rgb(255, 41, 41), rgb(55, 55, 255));
+
+    }
+
+    html {
+        overflow-x: hidden;
+
+    }
+
+
+
+    .nav-bar {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .left-nav a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .middle-nav a {
+        padding: 10px;
+        font-size: 25px;
+
+        text-decoration: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* ..................left nav...................... */
+
+
+    .left-nav {
+        padding: 25px;
+        font-size: 25px;
+    }
+
+
+    /* ..................middle nav...................... */
+
+    .middle-nav {
+        display: none;
+    }
+
+
+    /* ..................right nav...................... */
+    .right-nav {
+        /* background-color: greenyellow; */
+        padding: 5px;
+    }
+
+    .detail-icon {
+        width: 54px;
+        height: 54px;
+
+    }
+
+
+    .detail-icon img {
+        width: 44px;
+        height: 44px;
+
+    }
+
+    .close-icon {
+        display: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .middle-Nav {
+        position: absolute;
+        top: 103px;
+        left: 133px;
+        /* padding-top: 40px; */
+
+    }
+
+    .middle-Nav a {
+        display: flex;
+        font-size: 35px;
+        padding-top: 50px;
+        flex-direction: column;
+        color: white;
+
+        text-decoration: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    /* ...............main-area.............. --> */
+
+
+    .main2 {
+        display: none;
+        background-color: red;
+    }
+
+    .image-area {
+        /* background-color: yellow; */
+
+    }
+
+
+
+
+
+
+    .image-border {
+        /* background-color: yellow; */
+        width: 271px;
+        border-radius: 50%;
+        height: 275px;
+        margin: 15% 15%;
+    }
+
+    .image-border img {
+        width: 271px;
+        border-radius: 50%;
+        height: 275px;
+        margin-left: 43px;
+        object-fit: contain;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .person-detail-area {
+        /* background-color: aqua; */
+        text-align: center;
+        height: 149px;
+
+    }
+
+    .person-detail-area h1,
+    h2 {
+        text-align: center;
+        font-size: 40px;
+        /* padding-inline-start: 10px; */
+        color: white;
+    }
+
+    .person-detail-area h2 {
+        color: black;
+    }
+
+    .btn {
+        font-size: 35px;
+        margin-top: 20px;
+        border: none;
+        padding: 10px;
+        border-radius: 20px;
+    }
+
+
+
+
+
+    .social-media-link {
+        /* background-color: greenyellow; */
+        padding: 10px 20px;
+        height: 174px;
+        margin-top: 30px;
+        text-align: center;
+        padding-left: 85px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .social-media-link a {
+        text-decoration: none;
+        font-size: 35px;
+        border-radius: 50%;
+        /* background-color: red; */
+        color: white;
+        width: 103px;
+        height: 103px;
+    }
+
+    .social-media-link img {
+        width: 103px;
+        height: 103px;
+        margin: 5px;
+    }
+
+
+
 }
+/* .......................media screen 900px........................................................... */
+@media (max-width:360px) {
 
-.social-media-link a{
-    text-decoration: none;
-    font-size: 35px; 
-    border-radius: 50%;
-    /* background-color: red; */
-    color:white;
-    width: 103px;
-    height: 103px;
+
+
+    body {
+        overflow-x: hidden;
+        background: linear-gradient(45deg, rgb(255, 41, 41), rgb(55, 55, 255));
+
+    }
+
+    html {
+        overflow-x: hidden;
+
+    }
+
+
+
+    .nav-bar {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .left-nav a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .middle-nav a {
+        padding: 10px;
+        font-size: 25px;
+
+        text-decoration: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* ..................left nav...................... */
+
+
+    .left-nav {
+        padding: 25px;
+        font-size: 25px;
+    }
+
+
+    /* ..................middle nav...................... */
+
+    .middle-nav {
+        display: none;
+    }
+
+
+    /* ..................right nav...................... */
+    .right-nav {
+        /* background-color: greenyellow; */
+        padding: 5px;
+    }
+
+    .detail-icon {
+        width: 54px;
+        height: 54px;
+
+    }
+
+
+    .detail-icon img {
+        width: 44px;
+        height: 44px;
+
+    }
+
+    .close-icon {
+        display: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .middle-Nav {
+        position: absolute;
+        top: 103px;
+        left: 133px;
+        /* padding-top: 40px; */
+
+    }
+
+    .middle-Nav a {
+        display: flex;
+        font-size: 35px;
+        padding-top: 50px;
+        flex-direction: column;
+        color: white;
+
+        text-decoration: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    /* ...............main-area.............. --> */
+
+
+    .main2 {
+        display: none;
+        background-color: red;
+    }
+
+    .image-area {
+        /* background-color: yellow; */
+
+    }
+
+
+
+
+
+
+    .image-border {
+        /* background-color: yellow; */
+        width: 271px;
+        border-radius: 50%;
+        height: 275px;
+        margin: 15% 15%;
+    }
+
+    .image-border img {
+        width: 271px;
+        border-radius: 50%;
+        height: 275px;
+margin-left: 3px;
+margin-top: -33px;
+        object-fit: contain;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .person-detail-area {
+        /* background-color: aqua; */
+        text-align: center;
+        height: 149px;
+margin-top: -63px;
+    }
+
+    .person-detail-area h1,
+    h2 {
+        text-align: center;
+        padding-inline-start: 10px;
+        color: white;
+    }
+
+    .person-detail-area h2 {
+        color: black;
+        font-size: 35px;
+    }
+
+    .btn {
+        font-size: 35px;
+        margin-top: 20px;
+        border: none;
+        padding: 10px;
+        border-radius: 20px;
+    }
+
+
+
+
+
+    .social-media-link {
+        /* background-color: greenyellow; */
+        padding: 10px 20px;
+        height: 174px;
+        margin-top: 80px;
+        text-align: center;
+        /* padding-left: 15px; */
+        display: flex;
+        flex-direction: row;
+    }
+
+    .social-media-link a {
+        text-decoration: none;
+        font-size: 35px;
+        border-radius: 50%;
+        /* background-color: red; */
+        color: white;
+        width: 103px;
+        height: 103px;
+    }
+
+    .social-media-link img {
+        width: 103px;
+        height: 103px;
+        margin: 5px;
+    }
+
+
+
+
 }
-
-.social-media-link img{
-    width: 103px;
-    height: 103px;
-      margin: 5px; 
-}
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
